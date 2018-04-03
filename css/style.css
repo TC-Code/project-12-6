@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,8 +24,10 @@ body {
 
 .search-box {
   width: 300px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
   margin: 0 auto 80px;
 }
 
@@ -41,6 +42,16 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   padding: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: #30537a;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #30537a;
+  opacity: 1;
 }
 
 ::placeholder {
@@ -62,8 +73,10 @@ body {
 .flag {
   width: 200px;
   height: 130px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   box-shadow: 0 0 15px #b6b3b3;
 }
 
@@ -82,14 +95,18 @@ body {
 .box {
   width: 100vw;
   background-color: #ffffff;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 #countries {
   background-color: #ffffff;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .country,
@@ -98,8 +115,10 @@ body {
 .population,
 .languages,
 .currency {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 5px;
   background-color: #ffffff;
 }
@@ -108,4 +127,4 @@ body {
 .list-item {
   width: 200px;
 }
-
+/*# sourceMappingURL=style.css.map */
