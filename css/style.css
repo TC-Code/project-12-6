@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../images/shokunin-world-map-more-detail-2400px.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #30537a;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0;
+  color: #cdd7e2;
+  text-shadow: 5px 5px 20px #172738;
+}
+
+.search-box {
+  width: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  margin: 0 auto 80px;
+}
+
+#country-name {
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #30537a;
+  background-color: #cdd7e2;
+  box-shadow: 0 0 10px #30537a;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: #30537a;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #30537a;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #30537a;
+  opacity: 1;
+}
+
+#search {
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 900;
+  color: #30537a;
+  background-color: #cdd7e2;
+  box-shadow: 0 0 10px #30537a;
+  padding: 5px;
+}
+
+.flag {
+  width: 200px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  box-shadow: 0 0 15px #b6b3b3;
+}
+
+.country-name {
+  font-size: 4rem;
+  padding-left: 40px;
+}
+
+.list-item,
+.country-name,
+.flag-box,
+.information {
+  list-style: none;
+}
+
+.box {
+  width: 100vw;
+  background-color: #ffffff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+#countries {
+  background-color: #ffffff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.country,
+.capital,
+.region,
+.population,
+.languages,
+.currency {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+.flag-box,
+.list-item {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */
